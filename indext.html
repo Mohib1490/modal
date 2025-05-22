@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Modal Popup</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Page Wrapper for Sticky Footer -->
+  <div class="page-container">
+
+    <!-- Header -->
+    <header>
+      <h1>Welcome to Our Platform</h1>
+      <p>Explore features, get insights, and engage with helpful content curated just for you.</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="centered">
+        <!-- <p>Click the button below to launch a clean, responsive modal popup for urgent announcements or feature updates.</p> -->
+         <br>
+         <br>
+        <button class="open-btn" onclick="openModal()">📢 Launch Important Notice</button>
+        <p>Stay informed with the latest updates from our team.</p>
+      </section>
+    </main>
+
+    <!-- Additional Info Section -->
+    <section class="additional-content">
+      <h2>Did You Know?</h2>
+      <p>Our modal popup helps users focus on critical updates without distractions. It's simple, clean, and responsive.</p>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal" id="modalBox">
+        <button class="close-btn" onclick="closeModal()">×</button>
+        <h2 class="modal-heading">🔔 Important Update</h2>
+        <p>
+          We’ve just rolled out a new feature to enhance your productivity. Be sure to check your dashboard for real-time analytics and reports.
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>© Developed by Mohib</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/md-mohib-ullah/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://modercalculator.netlify.app/" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:mdmohibullah98@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </footer>
+
+  </div> <!-- end .page-container -->
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>

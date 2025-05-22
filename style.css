@@ -1,0 +1,212 @@
+/* Base Styles: Mobile First */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+  }
+  
+  /* Layout Wrapper */
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  header {
+    background-color: #005f73;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 10px 0;
+    font-size: 22px;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Section with Background */
+  .additional-content {
+    background-color: #e0f7fa;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Button */
+  .open-btn {
+    background-color: #0288d1;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .open-btn:hover {
+    background-color: #0277bd;
+  }
+  
+  /* Modal Overlay */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Modal Box */
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,0.25);
+  }
+  
+  /* Modal Close Button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* Modal Heading */
+  .modal-heading {
+    margin-top: 0;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  /* Center Utility */
+  .centered {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #023047;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: auto;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 15px;
+    width: 100%;
+  }
+  
+  footer .social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  footer .social-icons a {
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  footer .social-icons a:hover {
+    color: #ffb703;
+  }
+  
+  /* Responsive Typography & Spacing */
+  
+  /* Tablet (min-width: 600px) */
+  @media (min-width: 600px) {
+    header h1 {
+      font-size: 26px;
+    }
+  
+    .modal-heading {
+      font-size: 22px;
+    }
+  
+    .open-btn {
+      font-size: 17px;
+    }
+  
+    footer p {
+      font-size: 16px;
+    }
+  }
+  
+  /* Laptop/Desktop (min-width: 992px) */
+  @media (min-width: 992px) {
+    header {
+      padding: 30px;
+    }
+  
+    main {
+      padding: 40px;
+    }
+  
+    .additional-content {
+      padding: 30px;
+      margin-top: 30px;
+    }
+  
+    .modal {
+      padding: 30px;
+      
+    }
+  
+    .open-btn {
+      max-width: 300px;
+    }
+  
+    footer {
+      justify-content: space-between;
+      padding: 20px 40px;
+    }
+  
+    footer p {
+      width: auto;
+    }
+  
+    footer .social-icons {
+      width: auto;
+    }
+  }
+  
